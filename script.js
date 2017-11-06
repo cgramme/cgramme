@@ -30,7 +30,7 @@ $(document).on({
 
 $(window).scroll(function () { 
 
-    $('.name-under-text').text($(window).width());
+    //$('.name-under-text').text($(window).width());
 
 
 
