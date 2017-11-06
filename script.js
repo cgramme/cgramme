@@ -36,7 +36,9 @@ $(window).scroll(function () {
 
    //$('.background-top').css({'top' : ($(this).scrollTop()/2)+"px"}); 
 
-   $('.background-top').css({'transform' : 'translateY('+($(this).scrollTop()/2)+")"});
+   $('.background-top').css({'transform' : 'translateY('+($(this).scrollTop()/2)+'px)'});
+
+   //$('.background-top').css({'transform' : 'translateY('+'500px'+')'});
 
 
    //$('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
