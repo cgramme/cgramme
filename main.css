@@ -155,6 +155,9 @@ body {
   height: 800px;
   margin: 0 auto;
   text-align: center; }
+  @media screen and (max-width: 800px) {
+    .background-top {
+      background: url(images/mountains2m.jpg) no-repeat; } }
   .background-top .name-wrap {
     position: relative;
     top: 190px;
