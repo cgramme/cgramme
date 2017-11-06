@@ -1,0 +1,597 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+html {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+body {
+	opacity: 0;
+	overflow-x: hidden;
+	width: 100%;
+	background-color: #ccc;
+
+}
+
+@mixin gradientHue ($startG, $finishG){
+  background: -webkit-linear-gradient($startG, $finishG); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($startG, $finishG); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($startG, $finishG); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($startG, $finishG);
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation: FadeIn 1s forwards; /* Safari 4+ */
+    -moz-animation:    FadeIn 1s forwards; /* Fx 5+ */
+    -o-animation:      FadeIn 1s forwards; /* Opera 12+ */
+    animation:         FadeIn 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+
+@keyframes OpacityIn {
+    0% {
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.opacity-in {
+    -webkit-animation: OpacityIn 3s forwards; /* Safari 4+ */
+    -moz-animation:    OpacityIn 3s forwards; /* Fx 5+ */
+    -o-animation:      OpacityIn 3s forwards; /* Opera 12+ */
+    animation:         OpacityIn 3s forwards; /* IE 10+, Fx 29+ */
+}
+
+@keyframes Flip {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+}
+
+.flip {
+    -webkit-animation: Flip 1s forwards; /* Safari 4+ */
+    -moz-animation:    Flip 1s forwards; /* Fx 5+ */
+    -o-animation:      Flip 1s forwards; /* Opera 12+ */
+    animation:         Flip 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+@keyframes FlipReverse {
+    0% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0);
+    }
+}
+
+.flip-reverse {
+    -webkit-animation: FlipReverse 1s forwards; /* Safari 4+ */
+    -moz-animation:    FlipReverse 1s forwards; /* Fx 5+ */
+    -o-animation:      FlipReverse 1s forwards; /* Opera 12+ */
+    animation:         FlipReverse 1s forwards; /* IE 10+, Fx 29+ */
+}
+
+@keyframes DotIn {
+    0% {
+      right: -30px;
+      transform: scaleX(2) scaleY(1);
+    }
+    35% {
+    	transform: scaleX(2) scaleY(1);
+    }
+    50% {
+      right: 270px;
+      transform: scaleX(0.5) scaleY(1.5);
+    }
+    55% {
+      transform: scaleX(1) scaleY(1);
+    }
+    100% {
+      right: 5px;
+    }
+}
+
+.dot-in {
+    -webkit-animation: DotIn 1s forwards; /* Safari 4+ */
+    -moz-animation:    DotIn 1s forwards; /* Fx 5+ */
+    -o-animation:      DotIn 1s forwards; /* Opera 12+ */
+    animation:         DotIn 2s forwards; /* IE 10+, Fx 29+ */
+}
+
+@keyframes MenuIn {
+    0% {
+      right: -300px;
+    }
+    55% {
+      right: 10px;
+    }
+    100% {
+      right: 10px;
+    }
+}
+
+.menu-in {
+    -webkit-animation: MenuIn 1s forwards; /* Safari 4+ */
+    -moz-animation:    MenuIn 1s forwards; /* Fx 5+ */
+    -o-animation:      MenuIn 1s forwards; /* Opera 12+ */
+    animation:         MenuIn 2s forwards; /* IE 10+, Fx 29+ */
+}
+
+.menu {
+	background-color: rgba(0, 0, 0, 0.0);
+	z-index: 20;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-size: 25px;
+	font-family: "Open Sans Condensed";
+
+	ul {
+		position: absolute;
+		top: 0;
+		right: -300px;
+
+		li {
+			margin-right: 20px;
+			display: inline-block;
+			font-size: 26px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.dot {
+		position: absolute;
+		top: 10px;
+		right: -30px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #69CBBB;
+	}
+}
+
+.background-top {
+	position: relative;
+	background: url(images/mountains2.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 800px;
+	margin: 0 auto;
+	text-align: center;
+
+	.name-wrap {
+		position: relative;
+		top: 190px;
+		background-color: rgba(0, 0, 0, 0.4);
+		display: inline-block;
+		padding: 60px 30px 40px 30px;
+		border-radius: 50%;
+	}
+
+	.name-top-text {
+		font-size: 70px;
+		font-family: "Nothing You Could Do";
+		color: #fff;
+	}
+	.name-under-text {
+		position: relative;
+		font-size: 32px;
+		font-family: "Open Sans Condensed";
+		color: #ccc;
+		top: -20px;
+	}
+}
+
+.mountains {
+	position: relative;
+	width: 100%;
+	background: #fff;
+	height: auto;
+
+	.first-row .triangle {
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 200px solid transparent;
+		border-right: 200px solid transparent;
+		border-bottom: 200px solid #69CBBB;
+	}
+	.second-row .triangle {
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 200px solid transparent;
+		border-right: 200px solid transparent;
+		border-bottom: 200px solid #fff;
+	}
+
+	.first-row {
+		position: relative;
+		top: -130px;
+		width: 100%;
+		height: 200px;
+
+
+		div:nth-of-type(1) {left: -130px}
+		div:nth-of-type(2) {left: 50px; top: 20px}
+		div:nth-of-type(3) {left: 350px;
+			&:after {
+				content: "";
+				left: -30px;
+				position: absolute;
+				top: 0px;
+				width: 100px;
+				width: 0;
+				height: 0;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+				border-bottom: 30px solid #fff;
+			}
+		}
+		div:nth-of-type(4) {right: 400px; top: 30px}
+		div:nth-of-type(5) {right: 100px;
+			&:after {
+				content: "";
+				left: -50px;
+				position: absolute;
+				top: 0px;
+				width: 100px;
+				width: 0;
+				height: 0;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-bottom: 50px solid #fff;
+			}
+		}
+		div:nth-of-type(6) {right: -150px; top: 50px}
+
+		.fisherman {
+			position: absolute;
+			top: 100px;
+			left: 440px;
+			width: 100px;
+			height: 100px;
+			background: url(images/fisherman2.png);
+			background-size: 100% 100%;
+		}
+
+		.whiteout {
+			background: #69CBBB;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			margin-top: 200px;
+		}
+	}
+	.second-row {
+		position: relative;
+		top: -300px;
+		width: 100%;
+		height: 200px;
+
+		div:nth-of-type(1) {left: -100px}
+		div:nth-of-type(2) {left: 70px; top: 20px}
+		div:nth-of-type(3) {left: 200px}
+		div:nth-of-type(4) {left: 380px; top: 30px}
+		div:nth-of-type(5) {right: 450px; top: 0px}
+		div:nth-of-type(6) {right: 270px; top: 0px}
+		div:nth-of-type(7) {right: 80px}
+		div:nth-of-type(8) {right: -100px; top: 0px}
+
+		.whiteout {
+			background: #fff;
+			width: 100%;
+			height: 200px;
+			position: absolute;
+			z-index: 10;
+			margin-top: 200px;
+		}
+
+	}
+
+	.about-me {
+		width: 80%;
+		margin: -320px auto 0 auto;
+		position: relative;
+		z-index: 11;
+
+		p {
+			color: #111;
+			font-size: 22px;
+			font-family: "Open Sans Condensed";
+		}
+		span {
+			color: #333;
+			font-size: 62px;
+			float: left;
+			margin: -13px 0 -20px;
+			font-family: "Open Sans Condensed";
+		}
+		.quote {
+			color: #666;
+			font-size: 28px;
+			text-align: center;
+			font-family: "Nothing You Could Do";
+		}
+	}
+
+	.samples-text {
+		text-align: center;
+		font-family: "Open Sans Condensed";
+		color: #444;
+		font-size: 60px;
+		margin-top: 40px;
+	}
+
+	ul.projects-list {
+		z-index: 15;
+		position: relative;
+		list-style-type: none;
+		text-align: center;
+		overflow: visible;
+		margin-top: 70px;
+
+		li.parent-3d {
+			vertical-align:top;
+			margin: 10px;
+			display: inline-block;
+			perspective: 400px;
+			@media screen and (max-width: 1120px) {
+				width: 22%;
+				margin: 1%;
+		  	}
+		  	@media screen and (max-width: 800px) {
+				width: 40%;
+				margin: 2%;
+		  	}
+
+			.child-3d {
+				width: 250px;
+				height: 250px;
+				transform-style: preserve-3d;
+				@media screen and (max-width: 1120px) {
+					width: 100%;
+			  	}
+
+				p {
+					text-align: center;
+					width: 100%;
+					font-size: 30px;
+					font-family: "Open Sans Condensed";
+					color: #222;	
+					@media screen and (max-width: 1120px){
+						font-size: 2.5vw;
+					}	
+					@media screen and (max-width: 800px){
+						font-size: 4vw;
+					}	
+				}
+
+				.frontside {
+					backface-visibility: hidden;
+				}
+
+				.backside {
+					backface-visibility: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: rotateY(180deg);
+
+					.back-pic {
+						background: url(images/luke.jpg);
+						background-size: 100% 100%;
+						float: left;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+					}
+
+					p {
+						text-align: left;
+						font-size: 20px;
+						margin-bottom: 10px;
+						@media screen and (max-width: 1120px){
+							font-size: 2vw;
+						}
+						@media screen and (max-width: 800px){
+							font-size: 2.5vw;
+						}
+						@media screen and (max-width: 600px){
+							font-size: 3vw;
+						}
+					}
+
+					.back-button {
+						display: inline-block;
+						font-size: 20px;
+						color: #fff;
+						text-align: center;
+						font-weight: bold;
+						background: #4286f4;
+						width: 48%;
+						border-radius: 2px;
+						padding: 5px 0;
+						cursor: pointer;
+						transition: background 0.3s;
+
+						&:hover {
+							background: #204582;
+						}
+
+						@media screen and (max-width: 1120px){
+							font-size: 1.5vw;
+						}
+						@media screen and (max-width: 800px){
+							font-size: 2.5vw;
+						}
+						@media screen and (max-width: 600px){
+							font-size: 3vw;
+						}
+					}
+
+					.go-to-github {
+						@extend .back-button;
+						float: left;
+					}
+
+					.go-to-site {
+						@extend .back-button;
+						float: right;
+					}
+				}
+			}
+		}
+
+		#about-project {
+			width: 30px;
+			height: 30px;
+			background: url(images/goTo.ico);
+			background-size: 100% 100%;
+			margin: 20px auto;
+		}
+		.li-pics {
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			border-radius: 50%;
+		}
+		.diy-audi {
+			@extend .li-pics;
+			background: url(images/audiLogo.png);
+			background-size: 100% 100%;
+		}
+		.jedi {
+			@extend .li-pics;
+			background: url(images/luke.jpg);
+			background-size: 100% 100%;
+		}
+		.weather {
+			@extend .li-pics;
+			background: url(images/cloudyDay.png);
+			background-size: 100% 100%;
+		}
+		.supercar {
+			@extend .li-pics;
+			background: url(images/ferrari458.jpg);
+			background-size: 100% 100%;
+		}
+		.intergalactic {
+			@extend .li-pics;
+			background: url(images/enterprise.jpg);
+			background-size: 100% 100%;
+		}
+		.solar-system {
+			@extend .li-pics;
+			background: url(images/planet.png);
+			background-size: 100% 100%;
+		}
+		.car-app {
+			@extend .li-pics;
+			background: url(images/carLogo.png);
+			background-size: 100% 100%;
+			border-radius: 0;
+		}
+		.dreamsite {
+			@extend .li-pics;
+			background: url(images/cloudBulb.png);
+			background-size: 100% 100%;
+			border-radius: 0;
+		}
+
+	}
+}
+
+.line {
+	width: 40%;
+	height: 1px;
+	background: #69CBBB;
+	margin: auto;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stalagmite-wrap {
+	margin-top: -200px;
+	position: relative;
+}
+
+
+.first-stalagmite-row {
+		position: relative;
+		top: 100px;
+		width: 100%;
+		height: 200px;
+
+
+		div:nth-of-type(1) {left: -220px}
+		div:nth-of-type(2) {left: 30px; top: -20px}
+		div:nth-of-type(3) {left: 200px;}
+		div:nth-of-type(4) {left: 320px; top: -30px}
+		div:nth-of-type(5) {right: 320px; top: -30px}
+		div:nth-of-type(6) {right: 100px; top: -10px}
+		div:nth-of-type(7) {right: -50px; top: -20px}
+		div:nth-of-type(8) {right: -250px; top: -30px}
+
+		
+	}
+
+
+
+.stalagmite {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+	border-top: 200px solid #fff;
+}
+
+.cave {
+	background: url(images/cave.jpg);
+	background-size: 100% 100%;
+	height: 700px;
+}
+
+
+
+.footer {
+	width: 100%;
+	height: 80px;
+	background: #111;
+}
