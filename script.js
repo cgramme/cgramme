@@ -34,7 +34,7 @@ $(window).scroll(function () {
 
 
 
-   $('.background-top').css({'top' : ($(this).scrollTop()/2)+"px"}); 
+   $('.background-top-image').css({'top' : ($(this).scrollTop()/2)+"px"}); 
 
    
 
