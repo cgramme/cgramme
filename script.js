@@ -30,11 +30,12 @@ $(document).on({
 
 $(window).scroll(function () { 
 
-    //$('.name-under-text').text($(window).width());
-
     var scrollDistance = ($(this).scrollTop()/2);
 
-   $('.background-top-image').css({'top' : scrollDistance+"px"}); 
+    $('.name-under-text').text(scrollDistance);
+
+
+   //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
 
    
 
