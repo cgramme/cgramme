@@ -32,9 +32,9 @@ $(window).scroll(function () {
 
     //$('.name-under-text').text($(window).width());
 
+    var scrollDistance = ($(this).scrollTop()/2);
 
-
-   $('.background-top-image').css({'margin-bottom' : '-'+($(this).scrollTop()/2)+"px"}); 
+   $('.background-top-image').css({'top' : scrollDistance+"px"}); 
 
    
 
