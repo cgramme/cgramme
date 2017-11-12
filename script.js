@@ -42,7 +42,7 @@ $(window).scroll(function () {
 
 
    //$('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
-   $('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
+   //$('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
 
    if($('body').scrollTop() > 700){
        $('.menu').addClass('opacity-in');
