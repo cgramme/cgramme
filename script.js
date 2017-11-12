@@ -36,6 +36,8 @@ $(window).scroll(function () {
 
    $('.background-top').css({'top' : ($(this).scrollTop()/2)+"px"}); 
 
+   
+
    //$('.background-top').css({'transform' : 'translateY('+($(this).scrollTop()/2)+'px)'});
 
    //$('.background-top').css({'background-position' : '0px '+($(this).scrollTop()/2)+'px'});
