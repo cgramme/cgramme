@@ -191,7 +191,6 @@ body {
 
 .mountains {
   position: relative;
-  width: 100%;
   background: #fff;
   height: auto; }
   .mountains .first-row .triangle {
@@ -211,15 +210,17 @@ body {
   .mountains .first-row {
     position: relative;
     top: -130px;
-    width: 100%;
-    height: 200px; }
+    height: 200px;
+    background: blue;
+    margin: auto;
+    width: 0; }
     .mountains .first-row div:nth-of-type(1) {
-      left: -130px; }
+      left: -805px; }
     .mountains .first-row div:nth-of-type(2) {
-      left: 50px;
+      left: -625px;
       top: 20px; }
     .mountains .first-row div:nth-of-type(3) {
-      left: 350px; }
+      left: -325px; }
       .mountains .first-row div:nth-of-type(3):after {
         content: "";
         left: -30px;
@@ -232,10 +233,10 @@ body {
         border-right: 30px solid transparent;
         border-bottom: 30px solid #fff; }
     .mountains .first-row div:nth-of-type(4) {
-      right: 400px;
+      left: -125px;
       top: 30px; }
     .mountains .first-row div:nth-of-type(5) {
-      right: 100px; }
+      left: 175px; }
       .mountains .first-row div:nth-of-type(5):after {
         content: "";
         left: -50px;
@@ -248,12 +249,12 @@ body {
         border-right: 50px solid transparent;
         border-bottom: 50px solid #fff; }
     .mountains .first-row div:nth-of-type(6) {
-      right: -150px;
+      left: 425px;
       top: 50px; }
     .mountains .first-row .fisherman {
       position: absolute;
       top: 100px;
-      left: 440px;
+      left: -235px;
       width: 100px;
       height: 100px;
       background: url(images/fisherman2.png);
@@ -267,28 +268,29 @@ body {
   .mountains .second-row {
     position: relative;
     top: -300px;
-    width: 100%;
-    height: 200px; }
+    height: 200px;
+    width: 0;
+    margin: auto; }
     .mountains .second-row div:nth-of-type(1) {
-      left: -100px; }
+      left: -775px; }
     .mountains .second-row div:nth-of-type(2) {
-      left: 70px;
+      left: -605px;
       top: 20px; }
     .mountains .second-row div:nth-of-type(3) {
-      left: 200px; }
+      left: -475px; }
     .mountains .second-row div:nth-of-type(4) {
-      left: 380px;
+      left: -295px;
       top: 30px; }
     .mountains .second-row div:nth-of-type(5) {
-      right: 450px;
+      left: -175px;
       top: 0px; }
     .mountains .second-row div:nth-of-type(6) {
-      right: 270px;
+      left: 5px;
       top: 0px; }
     .mountains .second-row div:nth-of-type(7) {
-      right: 80px; }
+      left: 195px; }
     .mountains .second-row div:nth-of-type(8) {
-      right: -100px;
+      left: 385px;
       top: 0px; }
     .mountains .second-row .whiteout {
       background: #fff;
@@ -472,34 +474,6 @@ body {
 .stalagmite-wrap {
   margin-top: -200px;
   position: relative; }
-
-.first-stalagmite-row {
-  position: relative;
-  top: 100px;
-  width: 100%;
-  height: 200px; }
-  .first-stalagmite-row div:nth-of-type(1) {
-    left: -220px; }
-  .first-stalagmite-row div:nth-of-type(2) {
-    left: 30px;
-    top: -20px; }
-  .first-stalagmite-row div:nth-of-type(3) {
-    left: 200px; }
-  .first-stalagmite-row div:nth-of-type(4) {
-    left: 320px;
-    top: -30px; }
-  .first-stalagmite-row div:nth-of-type(5) {
-    right: 320px;
-    top: -30px; }
-  .first-stalagmite-row div:nth-of-type(6) {
-    right: 100px;
-    top: -10px; }
-  .first-stalagmite-row div:nth-of-type(7) {
-    right: -50px;
-    top: -20px; }
-  .first-stalagmite-row div:nth-of-type(8) {
-    right: -250px;
-    top: -30px; }
 
 .stalagmite {
   position: absolute;

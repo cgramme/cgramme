@@ -227,7 +227,6 @@ body {
 
 .mountains {
 	position: relative;
-	width: 100%;
 	background: #fff;
 	height: auto;
 
@@ -251,13 +250,16 @@ body {
 	.first-row {
 		position: relative;
 		top: -130px;
-		width: 100%;
 		height: 200px;
+		background: blue;
+		margin: auto;
+		width: 0;
 
 
-		div:nth-of-type(1) {left: -130px}
-		div:nth-of-type(2) {left: 50px; top: 20px}
-		div:nth-of-type(3) {left: 350px;
+
+		div:nth-of-type(1) {left: -805px}
+		div:nth-of-type(2) {left: -625px; top: 20px}
+		div:nth-of-type(3) {left: -325px;
 			&:after {
 				content: "";
 				left: -30px;
@@ -271,8 +273,8 @@ body {
 				border-bottom: 30px solid #fff;
 			}
 		}
-		div:nth-of-type(4) {right: 400px; top: 30px}
-		div:nth-of-type(5) {right: 100px;
+		div:nth-of-type(4) {left: -125px; top: 30px}
+		div:nth-of-type(5) {left: 175px;
 			&:after {
 				content: "";
 				left: -50px;
@@ -286,12 +288,12 @@ body {
 				border-bottom: 50px solid #fff;
 			}
 		}
-		div:nth-of-type(6) {right: -150px; top: 50px}
+		div:nth-of-type(6) {left: 425px; top: 50px}
 
 		.fisherman {
 			position: absolute;
 			top: 100px;
-			left: 440px;
+			left: -235px;
 			width: 100px;
 			height: 100px;
 			background: url(images/fisherman2.png);
@@ -309,17 +311,18 @@ body {
 	.second-row {
 		position: relative;
 		top: -300px;
-		width: 100%;
 		height: 200px;
+		width: 0;
+		margin: auto;
 
-		div:nth-of-type(1) {left: -100px}
-		div:nth-of-type(2) {left: 70px; top: 20px}
-		div:nth-of-type(3) {left: 200px}
-		div:nth-of-type(4) {left: 380px; top: 30px}
-		div:nth-of-type(5) {right: 450px; top: 0px}
-		div:nth-of-type(6) {right: 270px; top: 0px}
-		div:nth-of-type(7) {right: 80px}
-		div:nth-of-type(8) {right: -100px; top: 0px}
+		div:nth-of-type(1) {left: -775px}
+		div:nth-of-type(2) {left: -605px; top: 20px}
+		div:nth-of-type(3) {left: -475px}
+		div:nth-of-type(4) {left: -295px; top: 30px}
+		div:nth-of-type(5) {left: -175px; top: 0px}
+		div:nth-of-type(6) {left: 5px; top: 0px}
+		div:nth-of-type(7) {left: 195px}
+		div:nth-of-type(8) {left: 385px; top: 0px}
 
 		.whiteout {
 			background: #fff;
@@ -567,24 +570,7 @@ body {
 }
 
 
-.first-stalagmite-row {
-		position: relative;
-		top: 100px;
-		width: 100%;
-		height: 200px;
 
-
-		div:nth-of-type(1) {left: -220px}
-		div:nth-of-type(2) {left: 30px; top: -20px}
-		div:nth-of-type(3) {left: 200px;}
-		div:nth-of-type(4) {left: 320px; top: -30px}
-		div:nth-of-type(5) {right: 320px; top: -30px}
-		div:nth-of-type(6) {right: 100px; top: -10px}
-		div:nth-of-type(7) {right: -50px; top: -20px}
-		div:nth-of-type(8) {right: -250px; top: -30px}
-
-		
-	}
 
 
 
