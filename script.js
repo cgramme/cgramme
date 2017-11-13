@@ -32,10 +32,10 @@ $(window).scroll(function () {
 
     var scrollDistance = ($(this).scrollTop()/2);
 
-    $('.name-under-text').text(scrollDistance);
+    //$('.name-under-text').text(scrollDistance);
 
 
-   //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
+   $('.background-top-image').css({'top' : scrollDistance+"px"}); 
 
    
 
@@ -45,7 +45,7 @@ $(window).scroll(function () {
 
 
    //$('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
-   //$('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
+   $('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
 
    if($('body').scrollTop() > 700){
        $('.menu').addClass('opacity-in');
