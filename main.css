@@ -147,6 +147,9 @@ body {
     border-radius: 50%;
     background-color: #69CBBB; }
 
+.background-top {
+  height: 800px; }
+
 .background-top-image {
   position: relative;
   background: url(images/mountains2.jpg);
@@ -158,6 +161,7 @@ body {
   text-align: center; }
   @media screen and (max-width: 800px) {
     .background-top-image {
+      position: fixed;
       background: url(images/mountains2m.jpg);
       background-repeat: no-repeat; } }
   .background-top-image .name-wrap {
@@ -171,12 +175,19 @@ body {
     font-size: 70px;
     font-family: "Nothing You Could Do";
     color: #fff; }
+    @media screen and (max-width: 800px) {
+      .background-top-image .name-top-text {
+        font-size: 10vw; } }
   .background-top-image .name-under-text {
     position: relative;
     font-size: 32px;
     font-family: "Open Sans Condensed";
     color: #ccc;
     top: -20px; }
+    @media screen and (max-width: 800px) {
+      .background-top-image .name-under-text {
+        top: -10%;
+        font-size: 5vw; } }
 
 .mountains {
   position: relative;

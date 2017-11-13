@@ -35,7 +35,7 @@ $(window).scroll(function () {
     //$('.name-under-text').text(scrollDistance);
 
 
-   $('.background-top-image').css({'top' : scrollDistance+"px"}); 
+   //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
 
    
 
