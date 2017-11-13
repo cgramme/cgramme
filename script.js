@@ -32,7 +32,7 @@ $(window).scroll(function () {
     var width = $(window).width();
     var scrollDistance = ($(this).scrollTop()/2);
 
-    if(width >= 1300){
+    if(width >= 1200){
         $('.background-top-image').css({'top' : scrollDistance+"px"});
         $('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
     }else{
@@ -53,9 +53,15 @@ $(window).scroll(function () {
 
    //$('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
 
-   if($('body').scrollTop() > 700){
-       $('.menu').addClass('opacity-in');
+   if($('body').scrollTop() > 700 && width > 1200){
+        $('.menu').addClass('opacity-in');
+   }else if($('body').scrollTop() > 500 && width <= 1200 && width > 800){
+        $('.menu').addClass('opacity-in');
+   }else if($('body').scrollTop() > 350 && width < 800 && width <= 800){
+        $('.menu').addClass('opacity-in');
    }
+
+
    
 
 });
@@ -67,13 +73,7 @@ function resizeWindow() {
 
     var mountainWidth = ($(window).width()/1350);
 
-    if(width >= 1300){
-        $('.background-top').css({'height' : '800px'});
-        $('.name-wrap').css({'top' : '190px'});
-    }else{
-        $('.background-top').css({'height' : '450px'});
-        $('.name-wrap').css({'top' : '100px'});
-    }
+    
 
     
 

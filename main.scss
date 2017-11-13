@@ -179,6 +179,12 @@ body {
 }
 .background-top {
 	height: 800px;
+	@media screen and (max-width: 1200px){
+		height: 600px;
+	}
+	@media screen and (max-width: 800px){
+		height: 450px;
+	}
 }
 .background-top-image {
 	position: relative;
@@ -189,6 +195,9 @@ body {
 	height: 800px;
 	margin: 0 auto;
 	text-align: center;
+	@media screen and (max-width: 1200px){
+		position: fixed;
+	}
 	@media screen and (max-width: 800px){
 		position: fixed;
 		background: url(images/mountains2m.jpg);
@@ -202,6 +211,12 @@ body {
 		display: inline-block;
 		padding: 60px 30px 40px 30px;
 		border-radius: 50%;
+		@media screen and (max-width: 1200px){
+			top: 120px;
+		}
+		@media screen and (max-width: 800px){
+			top: 100px;
+		}
 	}
 
 	.name-top-text {
@@ -209,7 +224,13 @@ body {
 		font-family: "Nothing You Could Do";
 		color: #fff;
 		@media screen and (max-width: 800px){
-			font-size: 10vw;
+			font-size: 50px;
+		}
+		@media screen and (max-width: 600px){
+			font-size: 40px;
+		}
+		@media screen and (max-width: 450px){
+			font-size: 30px;
 		}
 	}
 	.name-under-text {
@@ -219,8 +240,16 @@ body {
 		color: #ccc;
 		top: -20px;
 		@media screen and (max-width: 800px){
-			top: -10%;
-			font-size: 5vw;
+			top: -12px;
+			font-size: 25px;
+		}
+		@media screen and (max-width: 600px){
+			top: -12px;
+			font-size: 22px;
+		}
+		@media screen and (max-width: 450px){
+			top: -8px;
+			font-size: 16px;
 		}
 	}
 }
@@ -300,10 +329,10 @@ body {
 			background-size: 100% 100%;
 		}
 
-		.whiteout {
+		.whiteout-blue {
 			background: #69CBBB;
 			width: 100%;
-			height: auto;
+			height: 200px;
 			position: absolute;
 			margin-top: 200px;
 		}
@@ -323,16 +352,14 @@ body {
 		div:nth-of-type(6) {left: 5px; top: 0px}
 		div:nth-of-type(7) {left: 195px}
 		div:nth-of-type(8) {left: 385px; top: 0px}
+	}
 
-		.whiteout {
-			background: #fff;
-			width: 100%;
-			height: 200px;
-			position: absolute;
-			z-index: 10;
-			margin-top: 200px;
-		}
-
+	.whiteout {
+		background: #ff0;
+		width: 100%;
+		height: 200px;
+		position: relative;
+		z-index: 18;
 	}
 
 	.about-me {
@@ -345,6 +372,12 @@ body {
 			color: #111;
 			font-size: 22px;
 			font-family: "Open Sans Condensed";
+			@media screen and (max-width: 800px){
+				font-size: 18px;
+			}
+			@media screen and (max-width: 500px){
+				font-size: 16px;
+			}
 		}
 		span {
 			color: #333;
@@ -352,12 +385,26 @@ body {
 			float: left;
 			margin: -13px 0 -20px;
 			font-family: "Open Sans Condensed";
+			@media screen and (max-width: 800px){
+				font-size: 50px;
+				margin: -11px 0 -20px;
+			}
+			@media screen and (max-width: 500px){
+				font-size: 44px;
+				margin: -9px 0 -20px;
+			}
 		}
 		.quote {
 			color: #666;
 			font-size: 28px;
 			text-align: center;
 			font-family: "Nothing You Could Do";
+			@media screen and (max-width: 800px){
+				font-size: 22px;
+			}
+			@media screen and (max-width: 500px){
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -367,6 +414,12 @@ body {
 		color: #444;
 		font-size: 60px;
 		margin-top: 40px;
+		@media screen and (max-width: 800px){
+			font-size: 40px;
+		}
+		@media screen and (max-width: 500px){
+			font-size: 30px;
+		}
 	}
 
 	ul.projects-list {
@@ -592,7 +645,9 @@ body {
 
 
 .footer {
+	position: relative;
 	width: 100%;
 	height: 80px;
 	background: #111;
+	z-index: 20;
 }
