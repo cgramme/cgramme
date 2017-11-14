@@ -30,16 +30,21 @@ $(document).on({
 
 $(window).scroll(function () { 
     var width = $(window).width();
-    var scrollDistance = ($(this).scrollTop()/2);
+    var scrollDistance = ($(this).scrollTop()/1.7);
 
     if(width >= 1200){
-        $('.background-top-image').css({'top' : scrollDistance+"px"});
-        $('.first-row').css({'top' : -(($(this).scrollTop()/8)+100)+"px"}); 
+        $('.background-top-image').css({'top' : (scrollDistance)+"px"});
+
+
+        if($(window).scrollTop() < 450){
+            $('.first-row').css({'top' : -(($(this).scrollTop()/6)+100)+"px"}); 
+        }
+
     }else{
         $('.background-top-image').css({'top' : "0px"});
         $('.first-row').css({'top' : '-125px'}); 
     }
-    //$('.name-under-text').text($(window).width());
+    $('.name-under-text').text($(window).scrollTop());
 
 
    //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
