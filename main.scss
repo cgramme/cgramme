@@ -377,6 +377,7 @@ body {
 			}
 			@media screen and (max-width: 500px){
 				font-size: 16px;
+				line-height: 22px;
 			}
 		}
 		span {
@@ -386,6 +387,7 @@ body {
 	  		margin-top: -13px;
 	  		font-family: "Open Sans Condensed";
 	  		float: left;
+	  		//line-height: 62px;
 			@media screen and (max-width: 800px){
 				font-size: 50px;
 				margin-top: -11px;
@@ -393,6 +395,7 @@ body {
 			@media screen and (max-width: 500px){
 				font-size: 46px;
 				margin-top: -11px;
+				line-height: 62px;
 			}
 		}
 		.quote {
