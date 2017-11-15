@@ -20,6 +20,10 @@ $(document).ready(function(){
     resizeWindow();
 });
 
+$('.projects').on('click', function(){
+    $(window).scrollTop($('.samples-text').offset().top-25);
+});
+
 
 $(document).on({
     mouseover: function () {

@@ -162,18 +162,24 @@ body {
         background-color: rgba(105, 203, 187, 0.1);
         transform: rotateX(-120deg); } }
     .menu ul li {
-      margin: 0 20px 0 0;
+      margin: 0 3px 0 -10px;
       display: inline-block;
       font-size: 26px;
-      font-weight: normal; }
+      font-weight: normal;
+      transition: transform 0.5s;
+      padding: 0 6px;
+      width: 80px;
+      text-align: center; }
       @media screen and (max-width: 400px) {
         .menu ul li {
           font-weight: bold;
-          margin: 0;
-          width: 70px;
-          text-align: center; } }
+          margin: 0; } }
       .menu ul li:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        transform: scale(1.05);
+        text-weight: bold;
+        background-color: rgba(105, 203, 187, 0.6);
+        border-radius: 50%; }
     @media screen and (max-width: 400px) {
       .menu ul .github {
         float: left;
@@ -456,6 +462,9 @@ body {
     text-align: center;
     overflow: visible;
     margin-top: 70px; }
+    @media screen and (max-width: 500px) {
+      .mountains ul.projects-list {
+        margin-top: 50px; } }
     .mountains ul.projects-list li.parent-3d {
       vertical-align: top;
       margin: 10px;
@@ -615,7 +624,7 @@ body {
 .footer {
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 40px;
   background: #111;
   z-index: 20; }
 
