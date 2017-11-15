@@ -134,29 +134,32 @@ body {
 }
 
 .menu-in {
-    -webkit-animation: MenuIn 1s forwards; /* Safari 4+ */
-    -moz-animation:    MenuIn 1s forwards; /* Fx 5+ */
-    -o-animation:      MenuIn 1s forwards; /* Opera 12+ */
+    -webkit-animation: MenuIn 2s forwards; /* Safari 4+ */
+    -moz-animation:    MenuIn 2s forwards; /* Fx 5+ */
+    -o-animation:      MenuIn 2s forwards; /* Opera 12+ */
     animation:         MenuIn 2s forwards; /* IE 10+, Fx 29+ */
 }
 
 @keyframes MenuInSmall {
     0% {
-      right: -300px;
+      	transform: rotateX(-120deg);
     }
-    55% {
-      right: 10px;
+    20% {
+      	transform: rotateX(-120deg);
+    }
+    70% {
+      	transform: rotateX(15deg);
     }
     100% {
-      right: 10px;
+      	transform: rotateX(0deg);
     }
 }
 
 .menu-in-small {
-    -webkit-animation: MenuInSmall 1s forwards; /* Safari 4+ */
-    -moz-animation:    MenuInSmall 1s forwards; /* Fx 5+ */
-    -o-animation:      MenuInSmall 1s forwards; /* Opera 12+ */
-    animation:         MenuInSmall 2s forwards; /* IE 10+, Fx 29+ */
+    -webkit-animation: MenuInSmall 2s forwards; /* Safari 4+ */
+    -moz-animation:    MenuInSmall 2s forwards; /* Fx 5+ */
+    -o-animation:      MenuInSmall 2s forwards; /* Opera 12+ */
+    animation:         MenuInSmall 1s forwards; /* IE 10+, Fx 29+ */
 }
 
 .menu {
@@ -169,10 +172,12 @@ body {
 	color: #fff;
 	font-size: 25px;
 	font-family: "Open Sans Condensed";
+	-webkit-perspective: 100px; /* Chrome, Safari, Opera */
+    perspective: 100px;
 
 
 	ul {
-		//background: #ff0;
+		transform-origin: top;
 		position: absolute;
 		top: 0;
 		right: -300px;
@@ -180,7 +185,8 @@ body {
 			height: 40px;
 			left: 0;
 			right: 0;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(105, 203, 187, 0.1);
+			transform: rotateX(-90deg);
 		}
 
 		li {
@@ -192,7 +198,7 @@ body {
 			@media screen and (max-width: 400px){
 				font-weight: bold;
 				margin: 0;
-				width: 80px;
+				width: 70px;
 				text-align: center;
 			}
 			&:hover {
@@ -280,6 +286,9 @@ body {
 		}
 		@media screen and (max-width: 800px){
 			top: 100px;
+		}
+		@media screen and (max-width: 450px){
+			top: 120px;
 		}
 	}
 

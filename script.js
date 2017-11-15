@@ -8,7 +8,7 @@ $(window).load(function(){
             $('.dot').addClass('dot-in');
             $('.menu > ul').addClass('menu-in');
         }else{
-
+            $('.menu > ul').addClass('menu-in-small');
         }
 
 
@@ -86,10 +86,10 @@ function resizeWindow() {
     
     if($(window).width() >= 400){
         $('.dot').addClass('dot-in');
-        $('.menu > ul').addClass('menu-in');
+        $('.menu > ul').removeClass('menu-in-small').addClass('menu-in');
     }else{
         $('.dot').removeClass('dot-in');
-        $('.menu > ul').removeClass('menu-in');
+        $('.menu > ul').removeClass('menu-in').addClass('menu-in-small');
     }
     
 
