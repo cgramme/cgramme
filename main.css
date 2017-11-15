@@ -220,7 +220,8 @@ body {
 .mountains {
   position: relative;
   background: #fff;
-  height: auto; }
+  height: auto;
+  overflow-x: hidden; }
   .mountains .first-row .triangle {
     position: absolute;
     width: 0;
