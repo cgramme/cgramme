@@ -222,7 +222,7 @@ body {
   height: auto;
   overflow: hidden;
   padding-top: 180px;
-  top: -150px; }
+  margin-top: -160px; }
   .mountains .main-content-wrap {
     background: #fff;
     z-index: 10;
