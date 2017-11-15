@@ -256,9 +256,16 @@ body {
 
 .mountains {
 	position: relative;
-	background: #fff;
+	//background: #fff;
 	height: auto;
-	overflow-x: hidden;
+	overflow: hidden;
+	padding-top: 180px;
+
+	.main-content-wrap {
+		background: #fff;
+		z-index: 10;
+		position: relative;
+	}
 
 	.first-row .triangle {
 		position: absolute;
