@@ -221,7 +221,8 @@ body {
   position: relative;
   height: auto;
   overflow: hidden;
-  padding-top: 180px; }
+  padding-top: 180px;
+  top: -150px; }
   .mountains .main-content-wrap {
     background: #fff;
     z-index: 10;
@@ -325,17 +326,12 @@ body {
     .mountains .second-row div:nth-of-type(8) {
       left: 385px;
       top: 0px; }
-  .mountains .whiteout {
-    background: #ff0;
-    width: 100%;
-    height: 200px;
-    position: relative;
-    z-index: 18; }
   .mountains .about-me {
     width: 80%;
-    margin: -320px auto 0 auto;
+    margin: -390px auto 0 auto;
     position: relative;
-    z-index: 11; }
+    z-index: 11;
+    padding-top: 50px; }
     .mountains .about-me p {
       color: #111;
       font-size: 22px;
