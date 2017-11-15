@@ -4,10 +4,13 @@ $(window).load(function(){
 	$('body').addClass('fade-in');
 
     setTimeout(function(){
+        if($(window).width() >= 400){
+            $('.dot').addClass('dot-in');
+            $('.menu > ul').addClass('menu-in');
+        }else{
 
-        $('.dot').addClass('dot-in');
+        }
 
-        $('.menu > ul').addClass('menu-in');
 
     },500);
 	
@@ -81,7 +84,13 @@ function resizeWindow() {
     var mountainWidth = ($(window).width()/1350);
 
     
-
+    if($(window).width() >= 400){
+        $('.dot').addClass('dot-in');
+        $('.menu > ul').addClass('menu-in');
+    }else{
+        $('.dot').removeClass('dot-in');
+        $('.menu > ul').removeClass('menu-in');
+    }
     
 
     $('.first-row, .second-row').css({'transform':'scale('+(mountainWidth)+')'});
