@@ -46,7 +46,7 @@ $(window).scroll(function () {
     }
 
 
-    //$('.name-under-text').text($(window).scrollTop());
+    $('.name-under-text').text($(window).scrollTop());
 
 
    //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
