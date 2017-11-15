@@ -44,7 +44,9 @@ $(window).scroll(function () {
         $('.background-top-image').css({'top' : "0px"});
         $('.first-row').css({'top' : '-125px'}); 
     }
-    $('.name-under-text').text($(window).scrollTop());
+
+
+    //$('.name-under-text').text($(window).scrollTop());
 
 
    //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
