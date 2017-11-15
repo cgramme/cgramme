@@ -185,6 +185,9 @@ body {
 	@media screen and (max-width: 800px){
 		height: 450px;
 	}
+	@media screen and (max-width: 450px){
+		height: 400px;
+	}
 }
 .background-top-image {
 	position: relative;
@@ -261,6 +264,7 @@ body {
 	overflow: hidden;
 	padding-top: 180px;
 	margin-top: -190px;
+
 
 	.main-content-wrap {
 		background: #fff;
