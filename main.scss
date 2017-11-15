@@ -260,7 +260,7 @@ body {
 	height: auto;
 	overflow: hidden;
 	padding-top: 180px;
-	margin-top: -160px;
+	margin-top: -190px;
 
 	.main-content-wrap {
 		background: #fff;
@@ -368,7 +368,16 @@ body {
 		margin: -390px auto 0 auto;
 		position: relative;
 		z-index: 11;
-		padding-top: 50px;
+		padding-top: 80px;
+		@media screen and (max-width: 800px){
+			padding-top: 50px;
+		}
+		@media screen and (max-width: 600px){
+			padding-top: 40px;
+		}
+		@media screen and (max-width: 450px){
+			padding-top: 30px;
+		}
 
 		p {
 			color: #111;
