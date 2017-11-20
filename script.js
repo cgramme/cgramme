@@ -24,6 +24,13 @@ $('.projects').on('click', function(){
     $(window).scrollTop($('.samples-text').offset().top-25);
 });
 
+$('.contact').on('click', function(){
+    $('.pop-up').show().addClass('pop-in');
+});
+$('.close').on('click', function(){
+    $('.pop-up').removeClass('pop-in').hide();
+});
+
 
 $(document).on({
     mouseover: function () {
