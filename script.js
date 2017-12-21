@@ -54,13 +54,13 @@ $(window).scroll(function () {
             $('.first-row').css({'top' : -(($(this).scrollTop()/6)+100)+"px"}); 
         }
 
-        if($(window).scrollTop() < 300){
-            $('.top-image-fade').css({'opacity' : $(window).scrollTop()/500}); 
-        }
-
     }else{
         $('.background-top-image').css({'top' : "0px"});
         $('.first-row').css({'top' : '-125px'}); 
+    }
+
+    if($(window).scrollTop() < 300){
+        $('.top-image-fade').css({'opacity' : $(window).scrollTop()/500}); 
     }
 
 
