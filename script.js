@@ -14,6 +14,8 @@ $(window).load(function(){
 
     },500);
 	window.loaded = true;
+
+    animateSnow();
 });
 
 $(document).ready(function(){
@@ -119,3 +121,20 @@ $(window).resize(function() {
     resizeWindow();
     
 });
+
+function animateSnow() {
+    var size = Math.floor(Math.random()*(70)+20);
+    var speed = (500000/size);
+    var maxWidth = $(window).width();
+    var choosenWidth = Math.floor(Math.random()*(maxWidth)-50);
+    var choosenInterval = Math.floor(Math.random()*(500)+500);
+    console.log("number= "+Math.floor(Math.random()*4+1));
+    $("<div id='snow-anima"+Math.floor(Math.random()*4+1)+"'></div>").css({'left':+choosenWidth+'px',
+        'top':'-10px',
+        'height':+size+'px',
+        'width':+size+'px',
+    }).animate({top: "100%"}, speed, "linear", function(){$(this).remove();}).prependTo('div.background-top').addClass('snow'+Math.floor(Math.random()*2+1));
+    setTimeout(function(){
+        animateSnow(100);
+    },choosenInterval);
+}
