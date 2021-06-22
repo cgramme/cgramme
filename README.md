@@ -1,2 +1,2 @@
 # cgramme
-New personal website
+personal website
