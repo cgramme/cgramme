@@ -46,39 +46,33 @@ $(document).on({
 
 $(window).scroll(function () { 
     var width = $(window).width();
-    var scrollDistance = ($(this).scrollTop()/1.7);
+    // var scrollDistance = ($(this).scrollTop()/1.7);
 
     if(width >= 1200){
-        $('.background-top-image').css({'top' : (scrollDistance)+"px"});
-
+        // $('.background-top-image').css({'transform' : "translateY("+scrollDistance+"px)"});
 
         if($(window).scrollTop() < 450){
             $('.first-row').css({'top' : -(($(this).scrollTop()/6)+100)+"px"}); 
         }
 
     }else{
-        $('.background-top-image').css({'top' : "0px"});
+        // $('.background-top-image').css({'top' : "0px"});
         $('.first-row').css({'top' : '-125px'}); 
     }
 
-    if($(window).scrollTop() < 300){
-        $('.top-image-fade').css({'opacity' : $(window).scrollTop()/500}); 
-    }
+    // if($(window).scrollTop() < 400){
+    //     $('.top-image-fade').css({'opacity' : $(window).scrollTop()/500}); 
+    // }
 
-
-    //$('.name-under-text').text($(window).scrollTop());
-
+   // $('.name-under-text').text($(window).scrollTop());
 
    //$('.background-top-image').css({'top' : scrollDistance+"px"}); 
-
-   
 
    //$('.background-top').css({'transform' : 'translateY('+($(this).scrollTop()/2)+'px)'});
 
    //$('.background-top').css({'background-position' : '0px '+($(this).scrollTop()/2)+'px'});
 
-
-   //$('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
+   $('.mountains').css({'top' : -($(this).scrollTop()/20)+"px"}); 
 
    if($('body').scrollTop() > 700 && width > 1200){
         $('.menu').addClass('opacity-in');
@@ -127,7 +121,7 @@ function animateSnow() {
     var speed = (500000/size);
     var maxWidth = $(window).width();
     var choosenWidth = Math.floor(Math.random()*(maxWidth)-50);
-    var choosenInterval = Math.floor(Math.random()*(500)+500);
+    var choosenInterval = Math.floor(Math.random()*(500)+1000);
     console.log("number= "+Math.floor(Math.random()*4+1));
     $("<div id='snow-anima"+Math.floor(Math.random()*4+1)+"'></div>").css({'left':+choosenWidth+'px',
         'top':'-10px',
@@ -135,6 +129,6 @@ function animateSnow() {
         'width':+size+'px',
     }).animate({top: "100%"}, speed, "linear", function(){$(this).remove();}).prependTo('div.background-top').addClass('snow'+Math.floor(Math.random()*2+1));
     setTimeout(function(){
-        animateSnow(100);
+        animateSnow();
     },choosenInterval);
 }

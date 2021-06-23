@@ -243,7 +243,7 @@ body {
 		}
 
 		li {
-			//background: #0f0;
+			// background: #0f0;
 			margin: 0 3px 0 -10px;
 			display: inline-block;
 			font-size: 26px;
@@ -259,7 +259,7 @@ body {
 			&:hover {
 				cursor: pointer;
 				transform: scale(1.05);
-				text-weight: bold;
+				font-weight: bold;
 				background-color: rgba(105, 203, 187, 0.6);
 				border-radius: 50%;
 			}
@@ -579,13 +579,30 @@ body {
 		}
 	}
 
+    .old-projects-text {
+        color: #333;
+        font-size: 22px;
+        font-family: "Open Sans Condensed";
+        line-height: 28px;
+        text-align: left;
+        max-width: 800px;
+        margin: 20px auto 0 auto;
+		@media screen and (max-width: 800px){
+			// font-size: 40px;
+		}
+		@media screen and (max-width: 500px){
+			// font-size: 30px;
+		}
+    }
+
 	ul.projects-list {
 		z-index: 15;
 		position: relative;
 		list-style-type: none;
 		text-align: center;
 		overflow: visible;
-		margin-top: 70px;
+        margin: 70px auto 0 auto;
+        max-width: 1100px;
 		@media screen and (max-width: 500px){
 			margin-top: 50px;
 		}
@@ -754,6 +771,12 @@ body {
 		.dreamsite {
 			@extend .li-pics;
 			background: url(images/cloudBulb.png);
+			background-size: 100% 100%;
+			border-radius: 0;
+		}
+        .wedding {
+			@extend .li-pics;
+			background: url(images/bride_and_groom_fireworks2.png);
 			background-size: 100% 100%;
 			border-radius: 0;
 		}
