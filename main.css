@@ -887,6 +887,28 @@ body {
   margin: 20px auto 0 auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .mountains .old-projects-text {
+    padding: 0 12%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mountains .old-projects-text {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mountains .old-projects-text {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 8%;
+  }
+}
+
 .mountains ul.projects-list {
   z-index: 15;
   position: relative;
